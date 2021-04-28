@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zen+Dots&display=swap');
+
+body, html {
+  height:100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+  margin: 30px;
+}
+iframe {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -9999;
+}
+#clock-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Zen Dots', cursive;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+#greeting {
+  font-family: 'Poppins', sans-serif;
+}
+label{
+  color: #fff;
+}
+#date-toggle {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 4px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#form, #h3-settings{
+  padding-top: 50px;
+	padding-left: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+#form div{
+  padding-bottom: 2rem;
+}
+
+#info-container {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  width: 100%;
+  height: 35vh;
+  font-size: 1.2rem;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.col-sm {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* #description {
+  background-color: #111;
+  padding: 20px;
+} */
+
+@media(min-width: 576px) {
+  #info-container {
+    height: 15vh;
+  }
+}
+@media(min-width: 768px) {
+  .sidenav {
+    padding-top: 15px;
+  } 
+  .sidenav a {
+    font-size: 18px;
+  }
+  #info-container {
+    height: 20vh;
+  }
+}
+/* @media(min-width: 576px) {
+  #info-container {
+    height: 20vh;
+  }
+} */

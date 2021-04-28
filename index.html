@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTM6302-Final Assignment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Allo Gov</h1>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#" class="closebtn">&times;</a>
+    <h3 id='h3-settings'>Settings</h3>
+
+    <form id="form">
+      <div id="first-one">
+        <p>24 Hour Clock</p>
+        <label class="btn-default">On</label>
+        <input type="radio" name="24Hour" id="hour-on" value="on">
+        <label class="btn-default">Off</label>
+        <input type="radio" name="24Hour" id="hour-off" value="off">
+      </div>
+
+      <div id="third-one">
+        <p>Show Date</p>
+        <label class="btn-default">On</label>
+        <input type="radio" name="date" id="date-on" value="on">
+        <label class="btn-default">Off</label>
+        <input type="radio" name="date" id="date-off" value="off">
+      </div>
+
+      <button class="save-settings" type="button">Save settings</button>
+    </form>
+
+  </div>
+
+
+  <span style="font-size:30px;cursor:pointer; margin-left: 30px;" class="open-nav">&#9881;</span>
+
+  <div id="video-container"></div>
+
+  <div id="container">
+    <div class="col-xs-12 center-block text-center">
+      <h1 id="greeting"></h1>
+    </div>
+    <div id="clock-container">
+      <div id="clock">
+        <span id="hours"></span>:
+        <span id="minutes"></span><span class="colon">:</span>
+        <span id="seconds"></span>
+        <span id="ampm"></span>
+      </div>
+    </div>
+    <div class="date-container">
+      <div class="col-xs-12 center-block text-center" id="date-toggle"></div>
+    </div>
+    <button id="more-info" type="button" class="btn btn-secondary">More Info</button>
+
+    <div class="container col-12" id="info-container" hidden>
+      <div class="row">
+        <div class="col-sm">
+          <div id="month-day">
+            Day of the Month:
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="month-year">
+            Month of the Year:
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div id="day-year">
+            Day of the Year:
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="day-week">
+            Day of the Week:
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
